@@ -1,0 +1,107 @@
+<html>
+	
+	<head>
+		<title>Sistema de Multas</title>
+			<style>
+				table {
+				    font-family: arial, sans-serif;
+				    border-collapse: collapse;
+				    width: 100%;
+				}
+
+				td, th {
+				    border: 1px solid #dddddd;
+				    text-align: left;
+				    padding: 8px;
+				}
+
+				tr:nth-child(even) {
+				    background-color: #dddddd;
+				}
+			</style>
+
+	</head>
+	<body>
+		<h1 style="text-align:center">Cadastro de Infrações</h1>
+		
+		<!--Dados do veiculo-->
+		<fieldset> 
+			<legend>Dados do veiculo</legend>
+			Placa: <input type="text" name="ABC-1234" value="ABC-1234">&emsp; &emsp;
+			
+			Renavam: <input type="text" name="Renavam" value="01587956412">&emsp; &emsp;
+			
+			Modelo: 
+			<select >
+				<option value="CG TITAN" >CG TITAN</option>
+				<option value="HORNET" >HORNET</option>
+			</select>&emsp; &emsp;
+			
+			Marca: 
+			<select>
+				<option value="HONDA" >HONDA</option>
+			</select>&emsp; &emsp;
+			
+			Categoria
+			<select>
+				<option value="Motocicleta"> Motocicleta</option>
+			</select>
+		</fieldset>	
+		<br>
+
+		<!--Dados do Proprietario-->
+		<fieldset>
+			<legend>Dados do Proprietário</legend>
+			Nome:<input type="text" name="nome" value="Nome">&emsp;&emsp;
+			CPF/CNPJ:<input type="text" name="CPF" value="CPF/CNPJ">&emsp;&emsp;
+			Data da Compra: <input type="date" name="data" >
+		</fieldset>
+		<br><br>
+		
+		<!--Tabela Infrações-->
+		<fieldset>
+			<legend>infrações</legend>
+				<table>
+					<tr>
+						<th>Código</th>
+						<th>Descrição</th>
+						<th>Pontos</th>
+						<th>Valor</th>
+						<th>Data</th>
+						<th>Hora</th>
+					</tr>	
+					<tr>
+						<td>33</td>
+						<td>Estacionar em local proibído</td>
+						<td>5</td>
+						<td>R$ 85.90</td>
+						<td>01/06/2017</td>
+						<td>12:05</td>
+					</tr>
+					<tr>
+						<td>33</td>
+						<td>Estacionar em local proibído</td>
+						<td>5</td>
+						<td>R$ 85.90</td>
+						<td>05/06/2017</td>
+						<td>13:47</td>
+					</tr>
+					<tr>
+						<td>45</td>
+						<td>Dirigir acima do limite permitido</td>
+						<td>7</td>
+						<td>R$ 930.55</td>
+						<td>12/06/2017</td>
+						<td>09:05</td>
+					</tr>
+				</table>
+				<p align="right"><button type="button" name="adicionar" >Adicionar</button></p>
+		</fieldset>			
+
+		<p align="right">
+			<button type="button" name="Salvar" >Salvar</button>
+			<button type="button" name="Imprimir" >Imprimir</button>
+			<button type="button" name="Cancelar" >Cancelar</button>
+		</p>
+	</body>
+</html> 
